@@ -8,6 +8,7 @@ def run_main():
         a_html_file_contents = a_html_file.read()
     # Create the soup object that holds all information about the HTML code.
     a_soup = BeautifulSoup(a_html_file_contents, 'html.parser')
+    print(a_soup.prettify())
     # Get the HTML code with tag 'title'.
     print(f'1: {a_soup.title}')
     # Get the tag name, in this case 'title'.
